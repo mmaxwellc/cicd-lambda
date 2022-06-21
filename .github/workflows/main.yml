@@ -28,4 +28,4 @@ jobs:
     - name: Install npm dependencies
       run:  npm install
     - name: Deploy lambda function
-      run: serverless deploy
+      run: serverless remove
