@@ -24,6 +24,7 @@ jobs:
       with:
          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         AWS_DEFAULT_REGION: us-east-2
     - name: Install npm dependencies
       run:  npm install
     - name: clean redundant files in node_modules
